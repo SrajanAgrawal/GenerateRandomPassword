@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Random Password</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="main">
+      <h1>
+        Generate a <br />
+        <span>Random Password</span>
+      </h1>
+      <br />
+      <!-- Input Field to show the generated password -->
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Password"
+          name="password"
+          id="iPassword"
+        />
+        <img
+          onclick="copyFunction()"
+          class="copy-img"
+          src="./images/copy.png"
+        />
+      </div>
+      <br />
+      <button onclick="generateRandom()">Generate Password</button>
+    </div>
+
+    <!-- External Javascript -->
+    <!-- To Not reduce the load time -->
+    <!-- Because if the js is targeting any html which is not rendered yet then it will create an error -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
